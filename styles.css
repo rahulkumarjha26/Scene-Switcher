@@ -38,7 +38,7 @@ nav > ul {
 }
 nav > ul > a {
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .nav-buttons {
@@ -52,7 +52,7 @@ nav > ul > a {
   border: none;
   padding: 12px 20px 12px 20px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .get-started {
