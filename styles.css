@@ -90,6 +90,7 @@ h1 {
   max-width: 70%;
 }
 p {
+  padding-top: 2rem;
   width: 100%;
   max-width: 960px;
   font-size: 20px;
@@ -106,11 +107,11 @@ p {
   align-items: center;
   position: relative;
   text-align: center;
-  gap: 48px;
-  margin-top: 124px;
+  padding-top: 124px;
 }
 
 #start-button-content {
+  margin: 48px;
 }
 
 .dark {
@@ -120,6 +121,7 @@ p {
 
 .video-frame {
   padding-top: 72px;
+  cursor: pointer;
 }
 
 .ham-icon {
@@ -133,14 +135,9 @@ p {
   }
   header {
     width: 100%;
-    padding: 24px;
   }
 
-  .hero-content {
-    margin-top: 55px;
-  }
-
-  .hero-content .ham-icon {
+  .ham-icon {
     display: block;
   }
 }
