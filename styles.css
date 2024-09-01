@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid lightgrey;
 }
 .logo {
   height: 34px;
@@ -43,6 +43,7 @@ nav > ul > a {
 .nav-buttons {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 #login {
