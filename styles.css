@@ -339,5 +339,6 @@ hr {
 
   .variation {
     font-size: 24px;
+    border-radius: 8px;
   }
 }
