@@ -74,7 +74,7 @@ main {
   position: absolute;
   width: 100%;
   z-index: -1;
-  top: calc(1.5rem - 40px);
+  top: calc(1.5rem - 6.5rem);
 }
 
 .bg img {
