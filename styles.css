@@ -90,7 +90,6 @@ h1 {
   max-width: 70%;
 }
 p {
-  padding-top: 2rem;
   width: 100%;
   max-width: 960px;
   font-size: 20px;
@@ -107,11 +106,11 @@ p {
   align-items: center;
   position: relative;
   text-align: center;
-  padding-top: 124px;
+  gap: 48px;
+  margin-top: 124px;
 }
 
 #start-button-content {
-  margin: 48px;
 }
 
 .dark {
@@ -123,6 +122,10 @@ p {
   padding-top: 72px;
 }
 
+.ham-icon {
+  display: none;
+}
+
 @media only screen and (max-width: 700px) {
   nav,
   .nav-buttons {
@@ -130,5 +133,14 @@ p {
   }
   header {
     width: 100%;
+    padding: 24px;
+  }
+
+  .hero-content {
+    margin-top: 55px;
+  }
+
+  .hero-content .ham-icon {
+    display: block;
   }
 }
