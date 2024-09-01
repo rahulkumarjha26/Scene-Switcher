@@ -191,6 +191,75 @@ p {
   object-fit: contain;
 }
 
+hr {
+  margin-top: 48px;
+  margin-inline: 80px;
+  color: #000000;
+  opacity: 33%;
+  border-width: 2px;
+}
+
+.showcases {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showcases-content {
+  padding-top: 30px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.showcases h1 {
+  font-size: 2.6rem;
+  line-height: 66px;
+  font-weight: 500;
+}
+
+.showcases p {
+  padding: 24px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.variation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 24px;
+}
+
+.variation.primary {
+  margin-top: 48px;
+}
+
+.variation h1 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.variation img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.video-section {
+  display: flex;
+  gap: 96px;
+  margin-top: 48px;
+  margin-bottom: 72px;
+  margin-inline: 96px;
+}
+
 @media only screen and (max-width: 768px) {
   nav,
   .nav-buttons {
