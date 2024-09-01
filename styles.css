@@ -102,7 +102,7 @@ p {
   line-height: 26px;
   color: #646a69;
   font-weight: 400;
-  letter-spacing: -0.04rem;
+  letter-spacing: 0.04%;
   text-transform: capitalize;
 }
 
@@ -120,6 +120,7 @@ p {
 #start-button-content {
   margin: 48px;
   font-weight: 400;
+  font-size: 18px;
 }
 
 .dark {
