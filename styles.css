@@ -97,11 +97,12 @@ h1 {
 p {
   padding-top: 2rem;
   width: 100%;
-  max-width: 960px;
+  max-width: 65%;
   font-size: 20px;
   color: #646a69;
   font-weight: 400;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.04rem;
+  text-transform: capitalize;
 }
 
 .hero-content {
