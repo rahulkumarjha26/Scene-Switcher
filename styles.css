@@ -38,6 +38,7 @@ nav > ul {
 }
 nav > ul > a {
   text-decoration: none;
+  font-weight: 500;
 }
 
 .nav-buttons {
@@ -51,11 +52,13 @@ nav > ul > a {
   border: none;
   padding: 12px 20px 12px 20px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .get-started {
   background-color: #ffffff;
   border-radius: 200px;
+  font-weight: 500;
   padding: 12px 20px 12px 20px;
   text-align: center;
   color: #022c22;
