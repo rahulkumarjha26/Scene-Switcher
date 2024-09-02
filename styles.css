@@ -356,12 +356,14 @@ hr {
 .green-frame {
   margin: 72px;
   max-width: 632px;
+  overflow:hidden;
+  border-radius: 8px;
 }
 
 .green-frame img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .steps {
@@ -802,6 +804,11 @@ text-align: center;
 
 }
 
+
+#get-in-touch{
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   nav,
   .nav-buttons {
@@ -883,4 +890,123 @@ text-align: center;
     font-size: 24px;
     border-radius: 8px;
   }
+
+  
+.features {
+  padding: 48px 24px 48px 24px;
+  gap: 48px;
+}
+
+.features h1 {
+font-size: 24px;
+line-height: 36px;
+letter-spacing: -0.03em;
+text-align: center;
+padding: unset;
+}
+
+.feature-content {
+  display: grid;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+}
+.feature {
+  width: 100%;
+  grid-column: 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px;
+}
+
+.how-it-works{
+  padding: 40px 24px 40px 24px;
+}
+
+.how-it-works-content{
+}
+.how-it-works-content h1{
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+letter-spacing: -0.03em;
+text-align: center;
+margin-inline: 56px;
+}
+
+.how-it-works-content p{
+  max-width: 100%;
+}
+.steps{
+  flex-direction: column;
+}
+
+.green-frame{
+  height: 464px;
+  width: 100%;
+}
+
+.pricing{
+  padding: 80px 24px 80px 24px;
+}
+
+.pricing-cards{
+  flex-direction: column;
+  gap: 48px;
+}
+
+.pricing-content h1{
+font-size: 24px;
+font-weight: 500;
+line-height: 36px;
+letter-spacing: -0.03em;
+text-align: center;
+}
+.pricing-content p{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: -0.004em;
+text-align: center;
+max-width: 80%;
+padding: unset;
+}
+
+#get-in-touch{
+  display: block;
+  font-family: "Inter", sans-serif;
+font-size: 24px;
+font-weight: 500;
+line-height: 38px;
+text-align: center;
+}
+
+.contact{
+  padding: 40px 24px 40px 24px;
+}
+
+
+.contact-content h1{
+  display: none
+}
+
+.contact-content p{
+  padding-top: 16px;
+}
+
+.name-wrapper{
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: unset;
+}
+form{
+  padding: unset;
+  width: 100%;
+  gap: 16px;
+}
+
+input{
+  max-width: 100%;
+}
 }
