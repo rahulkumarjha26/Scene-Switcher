@@ -65,7 +65,7 @@ nav > ul > a {
   font-weight: 400;
 }
 
-.get-started {
+.get-started{
   background-color: #ffffff;
   border-radius: 200px;
   font-weight: 600;
@@ -73,6 +73,12 @@ nav > ul > a {
   text-align: center;
   color: #022c22;
   cursor: pointer;
+}
+
+a{
+  color: #000000;
+  text-decoration: none;
+
 }
 
 main {
