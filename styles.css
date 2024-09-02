@@ -448,6 +448,16 @@ hr {
   align-items: center;
   width: 100%;
 }
+
+
+.rate-per-video{
+  padding: unset;
+  padding-block: 16px;
+}
+
+.pricing-feature{
+  padding: unset;
+}
 .card.primary {
   background-color: hsla(166, 91%, 9%, 1);
 }
