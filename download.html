@@ -34,7 +34,8 @@
       .contant {
         display: flex;
         flex-direction: column;
-        width: 780px;
+        max-width: 780px;
+        width: 100%;
         gap: 72px;
         border-radius: 8px;
         padding: 60px 48px;
@@ -46,12 +47,12 @@
       .title {
         display: flex;
         align-items: center;
-        gap: 64px;
       }
       .title h1 {
-        width: 481px;
+        max-width: 481px;
+        width: 100%;
         height: 96px;
-        font-family: Poppins;
+        font-family: "Poppins", sans-serif;
         font-size: 32px;
         font-weight: 600;
         line-height: 48px;
@@ -60,9 +61,11 @@
       .title img {
         width: 48px;
         height: 48px;
+        padding-right: 1rem;
       }
       .video-container {
-        width: 684px;
+        max-width: 684px;
+        width: 100%;
         height: 451px;
         border-radius: 16px;
         background: #d9d9d9;
