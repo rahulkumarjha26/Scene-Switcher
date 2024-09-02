@@ -260,6 +260,328 @@ hr {
   margin-inline: 96px;
 }
 
+.features {
+  width: 100%;
+  background-color: hsla(33, 100%, 96%);
+  padding: 80px 72px 80px 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+}
+
+.features h1 {
+  font-size: 40px;
+  line-height: 68px;
+  font-weight: 500;
+  padding: unset;
+}
+
+.feature-content {
+  display: grid;
+  width: 100%;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+.feature {
+  width: 100%;
+  grid-column: 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 36px;
+}
+
+.feature h2 {
+  padding: unset;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #000000;
+}
+
+.feature p {
+  padding: unset;
+  max-width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.004em;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.how-it-works {
+  width: 100%;
+  padding: 48px 72px 80px 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.how-it-works-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how-it-works h1,
+.pricing-content h1 {
+  font-size: 40px;
+  line-height: 68px;
+  font-weight: 500;
+
+  max-width: 100%;
+  padding: unset;
+}
+
+.how-it-works p,
+.pricing-content p {
+  padding: 16px;
+  max-width: 80%;
+  margin: unset;
+  font-size: 20px;
+  word-wrap: wrap;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.green-frame {
+  margin: 72px;
+  max-width: 632px;
+}
+
+.green-frame img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.steps {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.step h1 {
+  font-size: 64px;
+  padding: 16px;
+  font-weight: 300;
+  line-height: 96px;
+  text-align: center;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.5);
+  color: hsla(0, 0%, 0%, 0.5);
+}
+
+.step h6 {
+  color: hsla(0, 0%, 0%, 0.7);
+  font-weight: 400;
+  line-height: 36px;
+  font-size: 1.5rem;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.step p {
+  color: hsla(0, 0%, 0%, 0.5);
+  line-height: 30px;
+  max-width: 80%;
+  word-break: keep-all;
+}
+
+.pricing {
+  width: 100%;
+  background-color: hsla(33, 100%, 96%);
+  padding: 80px 72px 80px 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+}
+.pricing-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pricing-content p {
+  max-width: 60%;
+  color: hsla(170, 3%, 40%, 1);
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.card.primary {
+  background-color: hsla(166, 91%, 9%, 1);
+}
+.card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid lightgray;
+  background-color: white;
+  padding: 32px;
+  max-width: 384px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  border-radius: 16px;
+}
+
+.card h2 {
+  color: hsla(170, 3%, 12%, 1);
+  padding-block: 24px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.badge {
+  position: absolute;
+  background-color: hsla(82, 85%, 67%, 1);
+  width: 116px;
+  height: 25px;
+  padding: 6px 16px 4px 16px;
+  gap: 10px;
+  border-radius: 8px 8px 0px 0px;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  top: -25px;
+  right: 25px;
+  color: hsla(166, 91%, 9%, 1);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 68px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: hsla(170, 3%, 12%, 1);
+}
+
+.per-month {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: hsla(170, 3%, 40%, 1);
+}
+
+.rate-per-video {
+  max-width: 100%;
+  padding-top: 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.pricing-feature {
+  max-width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.004em;
+  text-align: left;
+  color: hsla(170, 3%, 12%, 1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card button {
+  width: 320px;
+  height: 56px;
+  padding: 16px 24px 16px 24px;
+  gap: 10px;
+  border-radius: 200px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsla(170, 3%, 12%, 1);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.004em;
+  text-align: left;
+}
+.card.primary button {
+  width: 320px;
+  height: 56px;
+  padding: 16px 24px 16px 24px;
+  margin-top: 24px;
+  gap: 10px;
+  border-radius: 200px;
+  border: 1px solid hsla(0, 0%, 100%, 1);
+  opacity: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.004em;
+  text-align: left;
+  color: hsla(0, 0%, 100%, 1);
+}
+
+.card.primary > .price,
+.card.primary > h2 {
+  color: hsla(0, 0%, 100%, 1);
+}
+
+.card.primary .per-month {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+.card.primary .rate-per-video {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.card.primary .pricing-feature {
+  color: hsla(0, 0%, 100%, 1);
+}
+
 @media only screen and (max-width: 768px) {
   nav,
   .nav-buttons {
