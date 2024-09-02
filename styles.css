@@ -155,7 +155,7 @@ p {
 }
 
 .modal {
-  display: none;
+  display: block;
   position: absolute;
   width: 0%;
   height: 100%;

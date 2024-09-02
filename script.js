@@ -1,9 +1,10 @@
 document.getElementById("menu-button").addEventListener("click", function () {
-  document.getElementById("modal").style.display = "block";
   document.getElementById("modal").style.width = "100%";
+  document.getElementById("modal").style.color = "#ffffff";
 });
 
 document.getElementById("close-button").addEventListener("click", function () {
   document.getElementById("modal").style.width = "0";
-  document.getElementById("modal").style.display = "none";
+  document.getElementById("modal").style.overflow = "hidden";
+  document.getElementById("modal").style.color = "transparent";
 });
