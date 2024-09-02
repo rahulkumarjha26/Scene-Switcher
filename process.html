@@ -24,6 +24,16 @@
         align-items: center;
         border-bottom: 1px solid lightgrey;
       }
+
+      nav img:first-child {
+        height: 40px;
+        padding: 4px;
+      }
+
+      #profile-pic {
+        height: 50px;
+        width: 50px;
+      }
       section {
         display: flex;
         flex-direction: column;
@@ -33,7 +43,9 @@
       .contant {
         display: flex;
         flex-direction: column;
-        width: 780px;
+        max-width: 780px;
+        width: 100%;
+        padding-inline: 2rem;
         gap: 72px;
         border-radius: 8px;
         padding: 60px 48px;
@@ -45,7 +57,7 @@
       .title {
         display: flex;
         align-items: center;
-        gap: 136px;
+        gap: 64px;
       }
       .title h1 {
         width: 481px;
@@ -60,7 +72,8 @@
       .instrudaction {
         display: flex;
         flex-direction: column;
-        width: 673px;
+        max-width: 673px;
+        width: 100%;
         padding: 24px;
         gap: 24px;
         border-radius: 8px;
@@ -111,8 +124,9 @@
         text-align: left;
       }
       .video {
-        width: 684px;
+        width: 100%;
         height: 451px;
+        max-width: 684px;
         border-radius: 16px;
         background: #d9d9d9;
         display: flex;
@@ -126,6 +140,10 @@
         line-height: 60px;
         text-align: left;
         color: #000000b2;
+      }
+      a {
+        color: #bef264;
+        text-decoration: none;
       }
       button {
         padding: 14px 24px 14px 24px;
@@ -148,16 +166,12 @@
         display: flex;
         width: 100%;
       }
-      a {
-        color: #ffffff;
-        text-decoration: none;
-      }
     </style>
   </head>
   <body>
     <nav>
       <img src="assets/Frame399841.svg" alt="Frame" />
-      <img src="assets/Avatar.svg" alt="avatar" />
+      <img id="profile-pic" src="assets/Avatar.svg" alt="avatar" />
     </nav>
     <section>
       <div class="contant">
