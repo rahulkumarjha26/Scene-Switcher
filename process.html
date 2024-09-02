@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
@@ -18,7 +24,7 @@
       }
       nav {
         background-color: #022c22;
-        padding: 1.5rem 4.5rem 1.5rem 3rem;
+        padding: 12px 108px 12px 108px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -43,21 +49,36 @@
       .contant {
         display: flex;
         flex-direction: column;
-        max-width: 780px;
+        max-width: 530px;
         width: 100%;
-        padding-inline: 2rem;
-        gap: 24px;
+        gap: 16px;
         border-radius: 8px;
-        padding: 60px 48px;
+        padding: 24px 36px;
         box-shadow: 0px 4px 4px -4px #0c0c0d0d;
         box-shadow: 0px 16px 32px -4px #0c0c0d1a;
         position: absolute;
-        top: 241px;
+        margin: 40px;
       }
       .title {
         display: flex;
-        align-items: center;
-        gap: 64px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 36px;
+      }
+
+      .logo {
+        height: 36px;
+        width: 100%;
+      }
+
+      .logo img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+
+      #arrow {
+        width: max-content;
       }
       .title h1 {
         width: 481px;
@@ -74,19 +95,17 @@
         flex-direction: column;
         max-width: 673px;
         width: 100%;
-        padding: 24px;
-        gap: 24px;
+        padding: 20px;
+        gap: 12px;
         border-radius: 8px;
         background-color: #c4c4c433;
       }
 
       .instrudaction h3 {
         font-family: Poppins;
-        width: 148px;
-        height: 36px;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 500;
-        line-height: 36px;
+        line-height: 24px;
         text-align: left;
       }
 
@@ -98,9 +117,9 @@
 
       .instrudaction div p {
         font-family: Poppins;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 400;
-        line-height: 30px;
+        line-height: 24px;
         text-align: left;
         color: #000000b2;
         text-transform: capitalize;
@@ -114,19 +133,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 24px;
+        gap: 12px;
       }
       .video-container h1 {
         font-family: Poppins;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 500;
         line-height: 36px;
         text-align: left;
       }
       .video {
         width: 100%;
-        height: 451px;
-        max-width: 684px;
+        height: 301px;
         border-radius: 16px;
         background: #d9d9d9;
         display: flex;
@@ -135,7 +153,7 @@
       }
       .video div {
         font-family: Poppins;
-        font-size: 40px;
+        font-size: 26px;
         font-weight: 500;
         line-height: 60px;
         text-align: left;
@@ -146,8 +164,9 @@
         text-decoration: none;
       }
       button {
-        padding: 14px 24px 14px 24px;
+        padding: 4px 16px 4px 16px;
         gap: 10px;
+        margin-top: 4px;
         border-radius: 50px;
         background: #022c22;
         width: 100%;
@@ -156,7 +175,7 @@
         display: flex;
         color: #bef264;
         font-family: Poppins;
-        font-size: 24px;
+        font-size: 16px;
         border: none;
         font-weight: 500;
         line-height: 36px;
@@ -166,28 +185,53 @@
         display: flex;
         width: 100%;
       }
+      .profile-container {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #ffffff;
+      }
+
+      .profile-container span {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+      }
+
+      #profile-pic {
+        border-left: 1.5px solid grey;
+        padding-left: 12px;
+        width: 50px;
+        height: 100%;
+        object-fit: contain;
+      }
     </style>
   </head>
   <body>
     <nav>
       <img src="assets/Frame399841.svg" alt="Frame" />
-      <img id="profile-pic" src="assets/Avatar.svg" alt="avatar" />
+      <div class="profile-container">
+        <span>Credits Remaining: 10</span>
+        <img id="profile-pic" src="assets/avatar-img.png" alt="avatar" />
+      </div>
     </nav>
     <section>
       <div class="contant">
         <div class="title">
           <img
+            id="arrow"
             src="assets/chevron-left.svg"
             alt="chevron-left"
-            width="48px"
-            height="48px"
+            width="100%"
+            height="100%"
           />
-          <img
-            src="assets/Frame39984Black.svg"
-            alt="Frame399841"
-            height="52px"
-            width="357px"
-          />
+          <div class="logo">
+            <img
+              src="assets/Frame39984Black.svg"
+              alt="Frame399841"
+              height="52px"
+              width="357px"
+            />
+          </div>
         </div>
         <div class="instrudaction">
           <h3>Instructions:</h3>
