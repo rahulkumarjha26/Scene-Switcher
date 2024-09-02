@@ -830,6 +830,10 @@ text-align: center;
     padding: 24px;
   }
 
+  .logo{
+    height: 29px;
+  }
+
   .ham-icon {
     display: block;
   }
