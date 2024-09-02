@@ -17,13 +17,21 @@
         box-sizing: border-box;
       }
       nav {
-        display: flex;
-        align-items: center;
-        padding: 34px 108px;
-        gap: 10px;
-        height: 120px;
-        justify-content: space-between;
         background-color: #022c22;
+        padding: 1.5rem 4.5rem 1.5rem 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid lightgrey;
+      }
+      nav img:first-child {
+        height: 40px;
+        padding: 4px;
+      }
+
+      #profile-pic {
+        height: 50px;
+        width: 50px;
       }
       section {
         display: flex;
@@ -55,12 +63,12 @@
         font-size: 32px;
         font-weight: 600;
         line-height: 48px;
+        padding-inline: 1rem;
         text-align: center;
       }
       .title img {
         width: 48px;
         height: 48px;
-        padding-right: 1rem;
       }
       .video-container {
         max-width: 684px;
@@ -110,12 +118,14 @@
   <body>
     <nav>
       <img src="assets/Frame399841.svg" alt="Frame" />
-      <img src="assets/Avatar.svg" alt="avatar" />
+      <img id="profile-pic" src="assets/Avatar.svg" alt="avatar" />
     </nav>
     <section>
       <div class="contant">
         <div class="title">
-          <img src="assets/chevron-left.svg" alt="chevron-left" />
+          <a href="process.html"
+            ><img src="assets/chevron-left.svg" alt="chevron-left"
+          /></a>
           <h1>Your Video Scenes Have Been Changed Successfully</h1>
         </div>
         <div class="video-container">
