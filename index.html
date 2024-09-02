@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -262,7 +268,100 @@
           </div>
         </div>
       </section>
+
+      <section id="contact" class="contact">
+        <div class="contact-content">
+          <h1>Contact Us</h1>
+          <p>We’d love to hear from you. Please fill out this form.</p>
+        </div>
+
+        <form class="form">
+          <div class="name-wrapper">
+            <fieldset name="first-name">
+              <legend>First Name</legend>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="First Name"
+              /><br /><br />
+            </fieldset>
+            <fieldset name="last-name">
+              <legend>Last Name</legend>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Last Name"
+              /><br /><br />
+            </fieldset>
+          </div>
+          <fieldset name="email">
+            <legend>Email</legend>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@company.com"
+            />
+          </fieldset>
+          <fieldset name="message">
+            <legend name>Message</legend>
+            <textarea name="message" id="message"></textarea>
+          </fieldset>
+
+          <button id="send-message">Send Message</button>
+        </form>
+      </section>
+
+      <section id="cta" class="cta">
+        <div class="cta-content">
+          <h1>Join the SceneSwitcher.io Revolution</h1>
+          <p>
+            Don't let stale ads and high editing costs hold your business back.
+            Join the countless marketers and entrepreneurs who have already
+            discovered the power of SceneSwitcher.io. Optimize your VSLs, engage
+            your audience, and take your conversions to new heights!
+          </p>
+        </div>
+
+        <div class="signup-banner">
+          <p>
+            Sign up now and experience the SceneSwitcher.io difference for
+            yourself. Your ROI will thank you!
+          </p>
+          <button>Get Started <img src="assets/tail-dark.png" alt="" /></button>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div class="top">
+        <div class="footer-nav">
+          <div class="logo">
+            <img src="assets/logo.png" alt="" />
+          </div>
+          <nav>
+            <ul>
+              <a href="home"><li id="home">Home</li></a>
+              <a href="features"><li id="features">Features</li></a>
+              <a href="benefits"><li id="benefits">Benefits</li></a>
+              <a href="pricing"><li id="pricing">Pricing</li></a>
+              <a href="home"><li id="contact">Contact</li></a>
+            </ul>
+          </nav>
+          <div class="social-links">
+            <img src="assets/facebook.png" alt="" />
+            <img src="assets/linkedin.png" alt="" />
+            <img src="assets/twitter.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="bottom">
+        <p>© 2021 SceneSwitcher. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
