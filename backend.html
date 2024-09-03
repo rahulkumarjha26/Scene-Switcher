@@ -32,66 +32,77 @@
     </header>
 
     <main>
-      <div class="left">
-        <h1>Upload and Customize</h1>
+      <section>
+        <div class="left">
+          <h1>Upload and Customize</h1>
 
-        <form action="">
-          <fieldset name="upload-video">
-            <legend>Upload Your Video:</legend>
-            <input type="file" placeholder="No file chosen" />
-          </fieldset>
-          <fieldset name="upload-mp3">
-            <legend>Video's MP3 File:</legend>
-            <input type="file" placeholder="No file chosen" />
-          </fieldset>
-          <fieldset name="upload-transcript">
-            <legend>Video's Transcribed Text File:</legend>
-            <input type="file" placeholder="No file chosen" />
-          </fieldset>
+          <form action="">
+            <fieldset name="upload-video">
+              <legend>Upload Your Video:</legend>
+              <input class="input" type="file" placeholder="No file chosen" />
+            </fieldset>
+            <fieldset name="upload-mp3">
+              <legend>Video's MP3 File:</legend>
+              <input class="input" type="file" placeholder="No file chosen" />
+            </fieldset>
+            <fieldset name="upload-transcript">
+              <legend>Video's Transcribed Text File:</legend>
+              <input class="input" type="file" placeholder="No file chosen" />
+            </fieldset>
 
-          <h2>Subtitle Design</h2>
+            <h2>Subtitle Design</h2>
 
-          <fieldset name="upload-font">
-            <legend>Upload Font File:</legend>
-            <input type="file" placeholder="No file chosen" />
-          </fieldset>
+            <fieldset name="upload-font">
+              <legend>Upload Font File:</legend>
+              <input class="input" type="file" placeholder="No file chosen" />
+            </fieldset>
 
-          <fieldset name="font-size">
-            <legend>Font Size: <span>0</span></legend>
+            <fieldset name="font-size">
+              <legend>Font Size: <span>0</span></legend>
 
-            <input
-              type="range"
-              min="1"
-              max="100"
-              value="20"
-              class="slider"
-              id="myRange"
-            />
-          </fieldset>
-          <fieldset name="font-color">
-            <legend>Font Color:</legend>
-            <input type="color" id="favcolor" value="#ffffff" /><span
-              >#ffffff</span
-            >
-          </fieldset>
-          <fieldset name="subtitle-bg">
-            <legend>Subtitle Background Color:</legend>
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="20"
+                class="slider"
+                id="myRange"
+              />
+            </fieldset>
 
-            <input type="color" id="favcolor" value="#000000" /><span
-              >#000000</span
-            >
-          </fieldset>
+            <div>
+              <label for="font-color">Font Color:</label>
+              <div id="font-color" name="font-color" class="color-picker">
+                <input type="color" id="favcolor" value="#ffffff" /><span
+                  >#ffffff</span
+                >
+              </div>
+            </div>
 
-          <button type="submit">Process</button>
-        </form>
-      </div>
+            <div>
+              <label for="subtitle-color">Font Color:</label>
+              <div id="subtitle-color" name="subtitle-bg" class="color-picker">
+                <input type="color" id="favcolor" value="#000000" /><span
+                  >#000000</span
+                >
+              </div>
+            </div>
 
-      <div class="right">
-        <h1>Tutorial</h1>
-        <div class="tutorial-box"></div>
-        <h1>Preview</h1>
-        <div class="preview-box"></div>
-      </div>
+            <button type="submit">Process</button>
+          </form>
+        </div>
+
+        <div class="right">
+          <h1>Tutorial</h1>
+          <div class="tutorial-box"></div>
+          <h1>Preview</h1>
+          <div class="preview-box">
+            <h1>Your New Scene Will Go Here</h1>
+
+            <h2>This Is How Your Original Subtitle Text Will Be Displayed</h2>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="script.js"></script>
