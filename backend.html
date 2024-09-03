@@ -58,13 +58,13 @@
             </fieldset>
 
             <fieldset name="font-size">
-              <legend>Font Size: <span>0</span></legend>
+              <legend>Font Size: <span id="slider-val">50</span></legend>
 
               <input
                 type="range"
                 min="1"
                 max="100"
-                value="20"
+                value="50"
                 class="slider"
                 id="myRange"
               />
@@ -73,7 +73,8 @@
             <div>
               <label for="font-color">Font Color:</label>
               <div id="font-color" name="font-color" class="color-picker">
-                <input type="color" id="favcolor" value="#ffffff" /><span
+                <input type="color" id="favcolor-1" value="#ffffff" /><span
+                  id="color-value-1"
                   >#ffffff</span
                 >
               </div>
@@ -82,7 +83,8 @@
             <div>
               <label for="subtitle-color">Font Color:</label>
               <div id="subtitle-color" name="subtitle-bg" class="color-picker">
-                <input type="color" id="favcolor" value="#000000" /><span
+                <input type="color" id="favcolor-2" value="#000000" /><span
+                  id="color-value-2"
                   >#000000</span
                 >
               </div>
@@ -105,6 +107,6 @@
       </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="backend.js"></script>
   </body>
 </html>
