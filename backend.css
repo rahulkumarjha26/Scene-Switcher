@@ -95,6 +95,16 @@ form {
   border: none;
 }
 
+#color-value-1,
+#color-value-2 {
+  width: 100px;
+  padding-left: 8px;
+}
+
+legend {
+  margin-block: 4px;
+}
+
 .input {
   max-height: 74px;
   padding: 8px;
@@ -127,6 +137,7 @@ form h2 {
   line-height: 48px;
   text-align: left;
 }
+
 .slidecontainer {
   width: 100%;
   padding: unset;
@@ -143,6 +154,7 @@ form h2 {
   transition: opacity 0.2s;
   overflow: hidden;
   border-radius: 16px;
+  cursor: pointer;
 }
 
 .slider::-webkit-slider-thumb {
@@ -182,13 +194,15 @@ form h2 {
 }
 
 .right {
-  width: 80%;
+  width: 624px;
+  max-width: 100%;
   border-left: 1px solid #19191980;
   padding-left: 36px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .right h1 {
@@ -197,14 +211,14 @@ form h2 {
 }
 
 .tutorial-box {
-  height: 300px;
+  height: 756px;
   width: 100%;
   border-radius: 12px;
   background-color: #d9d9d9;
 }
 
 .preview-box {
-  height: 500px;
+  height: 100%;
   width: 100%;
   border-radius: 12px;
   background-color: #d9d9d9;

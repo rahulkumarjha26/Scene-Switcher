@@ -4,14 +4,23 @@ const colorDisplay = document.getElementById("color-value-1");
 const colorDisplaySub = document.getElementById("color-value-2");
 
 colorPicker.addEventListener("input", function () {
-  colorDisplay.textContent = colorPicker.value;
+  colorDisplay.value = colorPicker.value;
 });
 
 colorPickerSub.addEventListener("input", function () {
-  colorDisplaySub.textContent = colorPickerSub.value;
+  colorDisplaySub.value = colorPickerSub.value;
 });
 
-// Slider functionality
+colorDisplay.addEventListener("input", function () {
+  const value = colorDisplay.value;
+  colorPicker.value = value;
+});
+
+colorDisplaySub.addEventListener("input", function () {
+  const value = colorDisplaySub.value;
+  colorPickerSub.value = value;
+});
+
 const rangeSlider = document.getElementById("myRange");
 const sliderValue = document.getElementById("slider-val");
 
