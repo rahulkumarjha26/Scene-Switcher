@@ -97,7 +97,8 @@ form {
 
 #color-value-1,
 #color-value-2 {
-  width: 100px;
+  width: 100%;
+  cursor: pointer;
   padding-left: 8px;
 }
 
