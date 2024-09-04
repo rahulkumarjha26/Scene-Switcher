@@ -27,4 +27,5 @@ const sliderValue = document.getElementById("slider-val");
 rangeSlider.addEventListener("input", function () {
   const value = rangeSlider.value;
   sliderValue.textContent = value;
+  document.getElementById("subtitle-text").style.fontSize = `${value / 2}px`;
 });
