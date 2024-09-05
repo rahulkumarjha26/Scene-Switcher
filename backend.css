@@ -104,9 +104,9 @@ form {
 
 #color-value-1,
 #color-value-2 {
-  width: 100%;
   cursor: pointer;
   padding: 8px;
+  margin-left: 20px;
 }
 
 .font-size {
