@@ -282,6 +282,30 @@ form h2 {
   text-align: center;
 }
 
+
+
+button {
+  max-width: 547px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px 24px 12px 24px;
+  gap: 10px;
+  border-radius: 50px;
+  border: 1px solid hsla(0, 0%, 0%, 1);
+  color: hsla(0, 0%, 0%, 1);
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0px;
+  font-family: Poppins;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #d9d9d9;
+}
+
 @media only screen and (max-width: 900px) {
 
   header {
@@ -302,7 +326,6 @@ form h2 {
   }
 
   .avatar{
-    
   }
   section{
     flex-direction: column;
@@ -345,28 +368,6 @@ form h2 {
   #credits{
     display: none;
   }
-}
-
-button {
-  max-width: 547px;
-  width: 100%;
-  margin-top: 20px;
-  padding: 12px 24px 12px 24px;
-  gap: 10px;
-  border-radius: 50px;
-  border: 1px solid hsla(0, 0%, 0%, 1);
-  color: hsla(0, 0%, 0%, 1);
-  background-color: transparent;
-  cursor: pointer;
-  opacity: 0px;
-  font-family: Poppins;
-  font-size: 20px;
-  text-align: center;
-  font-weight: 500;
-}
-
-button:hover {
-  background-color: #d9d9d9;
 }
 
 @media only screen and (max-width: 1080px) {
