@@ -284,18 +284,26 @@ form h2 {
 
 @media only screen and (max-width: 900px) {
 
-  header{
-    padding: unset;
-    padding: 12px;
-    padding-left: 0px;
+  header {
+    background-color: #022c22;
+    padding: 1.5rem 4.5rem 1.5rem 3rem;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+  }
+  .logo {
+    height: 34px;
+  }
+  .logo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 
-  .logo{
-    height: 20px;
+  .avatar{
+    
   }
-
- 
   section{
     flex-direction: column;
     margin-block: 24px;
@@ -307,6 +315,7 @@ form h2 {
   }
   .input{
     padding: 6px;
+    width: 100%;
   }
 
   .right{
