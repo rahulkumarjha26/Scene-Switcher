@@ -30,5 +30,5 @@ const sliderValue = document.getElementById("slider-val");
 rangeSlider.addEventListener("input", function () {
   const value = rangeSlider.value;
   sliderValue.textContent = value;
-  subtitleText.style.fontSize = `${value / 2}px`;
+  subtitleText.style.fontSize = `${value}px`;
 });
