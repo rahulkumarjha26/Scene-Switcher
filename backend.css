@@ -106,7 +106,7 @@ form {
 #color-value-2 {
   width: 100%;
   cursor: pointer;
-  padding-left: 8px;
+  padding: 8px;
 }
 
 .font-size {
@@ -195,14 +195,12 @@ form h2 {
   border: 1px solid #000000b2;
   display: flex;
   border-radius: 8px;
-  padding: 4px 48px 4px 10px;
+  margin-top: 4px;
+  padding: 8px 48px 8px 10px;
   align-items: center;
-  gap: 1rem;
 }
 
 .color-picker input {
-  height: 50px;
-  width: 50px;
   border: 0px solid transparent;
 }
 
@@ -273,8 +271,7 @@ form h2 {
   position: absolute;
   bottom: 0;
   color: hsla(0, 0%, 100%, 1);
-  margin: 24px 32px;
-  padding: 8px 18px;
+  margin: 24px 24px;
   background-color: hsla(0, 0%, 0%, 0.7);
   font-family: Montserrat;
   font-size: 24px;
