@@ -289,6 +289,12 @@ form h2 {
     padding: 12px;
     justify-content: space-between;
   }
+
+  .logo{
+    height: 20px;
+  }
+
+ 
   section{
     flex-direction: column;
     margin-block: 24px;
