@@ -337,6 +337,7 @@ button {
   gap: 10px;
   border-radius: 50px;
   border: 1px solid hsla(0, 0%, 0%, 1);
+  color: hsla(0, 0%, 0%, 1);
   background-color: transparent;
   cursor: pointer;
   opacity: 0px;
