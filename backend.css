@@ -285,7 +285,7 @@ form h2 {
 @media only screen and (max-width: 900px) {
 
   header{
-    padding: 12px 24px;
+    padding: 12px;
   }
   section{
     flex-direction: column;
