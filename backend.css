@@ -72,6 +72,7 @@ section {
   justify-content: center;
 }
 
+
 .left {
   padding: 36px 40px;
   box-shadow: 0px 4px 4px -4px #0c0c0d0d;
@@ -79,6 +80,8 @@ section {
   margin-right: 40px;
   border-radius: 12px;
 }
+
+
 
 form {
   margin-top: 32px;
@@ -120,6 +123,8 @@ form {
   border-radius: 14px;
   margin-block: 2px;
 }
+
+
 
 .input::-webkit-file-upload-button {
   padding: 4px 16px;
@@ -212,6 +217,9 @@ form h2 {
   justify-content: space-between;
 }
 
+
+
+
 .right h1 {
   font-weight: 600;
   font-size: 32px;
@@ -229,6 +237,8 @@ form h2 {
   border-radius: 12px;
   background-color: #d9d9d9;
 }
+
+
 
 .preview-box {
   height: 150%;
@@ -270,6 +280,53 @@ form h2 {
   font-size: 24px;
   font-weight: 700;
   text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+
+  header{
+    padding: 12px 24px;
+  }
+  section{
+    flex-direction: column;
+    margin-block: 24px;
+  }
+
+  .left{
+    margin: unset;
+    width: 100vw;
+  }
+  .input{
+    padding: 6px;
+  }
+
+  .right{
+    width: 100vw;
+    border: none;
+    padding: unset;
+    padding: 24px;
+  }
+
+  .tutorial-box{
+    width: 100%;
+    height: 200px;
+  }
+
+  .preview-box{
+    width: 100%;
+    height: 300px;
+  }
+
+  .preview-box h1{
+    width: unset;
+  }
+  .preview-box h2{
+    margin: 12px;
+  }
+  
+  #credits{
+    display: none;
+  }
 }
 
 button {
