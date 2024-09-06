@@ -20,16 +20,27 @@
   </head>
 
   <body>
-    <header>
-      <div class="logo">
-        <img src="assets/logo.png" alt="" />
+    <nav>
+      <img src="assets/Frame399841.svg" alt="Frame" />
+      <div class="profile-container">
+        <span>Credits Remaining: 10</span>
+        <img id="profile-pic" src="assets/avatar-img.png" alt="avatar" />
+        <div class="profile-dialog">
+          <div class="user">
+            <h4>Olivia Rhye</h4>
+            <p>olivia@example.com</p>
+          </div>
+          <div class="buttons">
+            <button>View profile</button>
+            <button>Credit left <span>50</span></button>
+            <button>Setting</button>
+          </div>
+          <div class="signout">
+            <button>Log out</button>
+          </div>
+        </div>
       </div>
-
-      <div class="avatar">
-        <p id="credits">Credits Remaining: 10</p>
-        <img src="assets/avatar-img.png" alt="" />
-      </div>
-    </header>
+    </nav>
 
     <main>
       <section>
@@ -107,6 +118,14 @@
       </section>
     </main>
 
+    <script>
+      const profilePic = document.getElementById("profile-pic");
+      const profileDialog = document.querySelector(".profile-dialog");
+
+      profilePic.addEventListener("click", () => {
+        profileDialog.classList.toggle("show");
+      });
+    </script>
     <script src="backend.js"></script>
   </body>
 </html>

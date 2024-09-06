@@ -15,48 +15,103 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  padding: 12px 84px 12px 84px;
+nav {
   background-color: #022c22;
+  padding: 12px 108px 12px 108px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid lightgrey;
 }
-
-.logo {
-  height: 29px;
-}
-
-.logo img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
-.avatar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+nav img:first-child {
   height: 40px;
+  padding: 4px;
 }
 
-.avatar p {
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 17.07px;
-  padding-inline: 1rem;
-  padding-block: 4px;
-  white-space: nowrap;
+#profile-pic {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   color: #ffffff;
-  border-right: 1px solid white;
+  position: relative;
 }
 
-.avatar img {
-  padding-inline: 1rem;
+.profile-container span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+#profile-pic {
+  border-left: 1.5px solid grey;
+  padding-left: 12px;
+  width: 50px;
   height: 100%;
-  width: 100%;
   object-fit: contain;
+}
+
+.profile-dialog {
+  position: absolute;
+  top: 100%;
+  width: 250px;
+  right: 0;
+  background-color: white;
+  color: #191919;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 18px 14px 18px 14px;
+  border-radius: 4px;
+  font-family: Plus Jakarta Sans, sans-serif;
+  display: none;
+}
+.profile-dialog h4 {
+  font-size: 20px;
+  padding-bottom: 4px;
+  font-weight: 600;
+  line-height: 30.24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.profile-dialog p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.2px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #191919b2;
+  opacity: 70%;
+}
+
+.profile-dialog .buttons {
+  margin-top: 12px;
+}
+
+.profile-dialog button {
+  border-radius: unset;
+  border: none;
+  color: #191919;
+  padding: unset;
+  padding-block: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.2px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-dialog button:hover {
+  scale: 1.01;
+  background-color: transparent;
+}
+
+.profile-dialog.show {
+  display: block; 
 }
 
 main {
@@ -305,6 +360,8 @@ button {
 button:hover {
   background-color: #d9d9d9;
 }
+
+
 
 @media only screen and (max-width: 900px) {
 
