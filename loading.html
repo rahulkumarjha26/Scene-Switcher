@@ -6,6 +6,12 @@
     <title>Download Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -121,6 +127,7 @@
         align-items: center;
         gap: 12px;
         color: #ffffff;
+        position: relative;
       }
 
       .profile-container span {
@@ -134,6 +141,64 @@
         width: 50px;
         height: 100%;
         object-fit: contain;
+      }
+
+      .profile-dialog {
+        position: absolute;
+        top: 100%;
+        width: 250px;
+        right: 0;
+        background-color: white;
+        color: #191919;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 18px 14px 18px 14px;
+        border-radius: 4px;
+        font-family: Plus Jakarta Sans, sans-serif;
+        display: none;
+      }
+      .profile-dialog h4 {
+        font-size: 20px;
+        padding-bottom: 4px;
+        font-weight: 600;
+        line-height: 30.24px;
+        letter-spacing: -0.02em;
+        text-align: left;
+      }
+      .profile-dialog p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.2px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #191919b2;
+        opacity: 70%;
+      }
+
+      .profile-dialog .buttons {
+        margin-top: 12px;
+      }
+
+      .profile-dialog button {
+        border-radius: unset;
+        border: none;
+        color: #191919;
+        padding: unset;
+        padding-block: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25.2px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .profile-dialog button:hover {
+        scale: 1.01;
+      }
+
+      .profile-dialog.show {
+        display: block; /* Show when avatar is clicked */
       }
 
       .loading-dots {
@@ -177,6 +242,20 @@
       <div class="profile-container">
         <span>Credits Remaining: 10</span>
         <img id="profile-pic" src="assets/avatar-img.png" alt="avatar" />
+        <div class="profile-dialog">
+          <div class="user">
+            <h4>Olivia Rhye</h4>
+            <p>olivia@example.com</p>
+          </div>
+          <div class="buttons">
+            <button>View profile</button>
+            <button>Credit left <span>50</span></button>
+            <button>Setting</button>
+          </div>
+          <div class="signout">
+            <button>Log out</button>
+          </div>
+        </div>
       </div>
     </nav>
     <section>
@@ -193,5 +272,14 @@
         <button>Cancel</button>
       </div>
     </section>
+
+    <script>
+      const profilePic = document.getElementById("profile-pic");
+      const profileDialog = document.querySelector(".profile-dialog");
+
+      profilePic.addEventListener("click", () => {
+        profileDialog.classList.toggle("show");
+      });
+    </script>
   </body>
 </html>
