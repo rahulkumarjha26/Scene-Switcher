@@ -150,9 +150,9 @@
         width: 250px;
         right: 0;
         background-color: white;
+        padding-top: 18px;
         color: #191919;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-        padding: 18px 14px 18px 14px;
         border-radius: 4px;
         font-family: Plus Jakarta Sans, sans-serif;
         display: none;
@@ -161,6 +161,7 @@
         font-size: 20px;
         padding-bottom: 4px;
         font-weight: 600;
+        padding-inline: 14px;
         line-height: 30.24px;
         letter-spacing: -0.02em;
         text-align: left;
@@ -168,6 +169,7 @@
       .profile-dialog p {
         font-size: 16px;
         font-weight: 400;
+        padding-inline: 14px;
         line-height: 25.2px;
         letter-spacing: -0.02em;
         text-align: left;
@@ -183,8 +185,10 @@
         border-radius: unset;
         border: none;
         color: #191919;
+        background: transparent;
         padding: unset;
-        padding-block: 8px;
+        margin: unset;
+        padding: 14px;
         font-size: 16px;
         font-weight: 400;
         line-height: 25.2px;
@@ -194,12 +198,19 @@
         justify-content: space-between;
       }
 
+      .buttons button:nth-child(1) {
+        border-top: 1px solid gray;
+      }
+      .buttons button:last-child {
+        border-top: 1px solid gray;
+      }
       .profile-dialog button:hover {
         scale: 1.01;
+        background-color: transparent;
       }
 
       .profile-dialog.show {
-        display: block; /* Show when avatar is clicked */
+        display: block;
       }
 
       .loading-dots {
@@ -252,8 +263,6 @@
             <button>View profile</button>
             <button>Credit left <span>50</span></button>
             <button>Setting</button>
-          </div>
-          <div class="signout">
             <button>Log out</button>
           </div>
         </div>
